@@ -20,26 +20,26 @@ Please note that the package is designed for British Airways, for other airlines
 
 ## **Usage**
 
-`from flyrewards.itinerary import Itinerary
-from flyrewards.fare_classes import FareClass
-from flyrewards.ba_trip import BA_Trip
+`from flyrewards.itinerary import Itinerary`
+`from flyrewards.fare_classes import FareClass`
+`from flyrewards.ba_trip import BA_Trip`
 
-# Create an itinerary with segments, each containing a list of airports and a fare class
-segments = [
-    ([ "LHR", "JFK", "SFO"], 'R'),
-    ([ "SFO", "LHR"], 'F'),
-]
-itinerary = Itinerary(*segments)
+`# Create an itinerary with segments, each containing a list of airports and a fare class`
+`segments = [`
+    `([ "LHR", "JFK", "SFO"], 'R'),`
+   ` ([ "SFO", "LHR"], 'F'),`
+`]`
+`itinerary = Itinerary(*segments)`
 
-# Create a BA_Trip instance by passing in the itinerary, ticket price, and Executive Club status
-trip = BA_Trip(itinerary, 500, 'silver')
+`# Create a BA_Trip instance by passing in the itinerary, ticket price, and Executive Club status`
+`trip = BA_Trip(itinerary, 500, 'silver')`
 
-# Use the provided methods to calculate the rewards earned
-avios_earned = trip.earns_avios_per_segment()
-tier_points_earned = trip.earns_tier_points_per_segment()
+`# Use the provided methods to calculate the rewards earned`
+`avios_earned = trip.earns_avios_per_segment()`
+`tier_points_earned = trip.earns_tier_points_per_segment()`
 
-print(f"Avios Earned: {avios_earned}")
-print(f"Tier Points Earned: {tier_points_earned}")`
+`print(f"Avios Earned: {avios_earned}")`
+`print(f"Tier Points Earned: {tier_points_earned}")`
 
 ## **Features**
 
