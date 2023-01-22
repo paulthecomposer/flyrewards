@@ -20,7 +20,7 @@ Please note that the package is designed for British Airways, for other airlines
 
 ## **Usage**
 
-from flyrewards.itinerary import Itinerary
+`from flyrewards.itinerary import Itinerary
 from flyrewards.fare_classes import FareClass
 from flyrewards.ba_trip import BA_Trip
 
@@ -39,7 +39,7 @@ avios_earned = trip.earns_avios_per_segment()
 tier_points_earned = trip.earns_tier_points_per_segment()
 
 print(f"Avios Earned: {avios_earned}")
-print(f"Tier Points Earned: {tier_points_earned}")
+print(f"Tier Points Earned: {tier_points_earned}")`
 
 ## **Features**
 
